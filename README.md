@@ -24,11 +24,11 @@ This application serves as an educational tool for understanding how different c
 ## 📸 Screenshots
 
 ### Registration Interface
-![Registration Process]![alt text](<Screenshots/Screenshot 2025-12-28 011742.png>)
+![Registration Process](Screenshots/register_demo.png)
 *Real-time visualization of the encryption process*
 
 ### Login with Decryption Log
-![Login Process]![alt text](<c:\Users\moham\Pictures\Screenshots\Screenshot 2025-12-28 012111.png>)
+![Login Process](Screenshots/login_demo.png)
 *Step-by-step decryption verification*
 
 ---
@@ -129,15 +129,34 @@ python main.py
 
 ---
 
-## 🗺️ Future Enhancements
+## 🔮 Future Work
 
-- [ ] Implement CTR encryption mode with IV
-- [ ] Add password reset functionality via email
-- [ ] Integrate password salting
-- [ ] Add comprehensive unit tests (pytest)
-- [ ] Implement multi-factor authentication (MFA)
-- [ ] Migrate to PostgreSQL with SQLAlchemy ORM
-- [ ] Implement proper logging (not just GUI display)
+The following enhancements are planned to improve security and production readiness:
+
+### 1️⃣ Replace ECB with CTR mode
+Migrate from Electronic Codebook (ECB) to Counter (CTR) mode to eliminate pattern preservation vulnerabilities and provide proper diffusion in encrypted data.
+
+### 2️⃣ Remove DES and rely on AES only
+Eliminate the deprecated DES algorithm and use AES-256 exclusively, as DES is vulnerable to brute-force attacks and no longer meets modern security standards.
+
+### 3️⃣ Implement password salting
+Add unique, randomly-generated salts for each password before hashing using PBKDF2 or Argon2 to prevent rainbow table attacks and enhance password security.
+
+### 4️⃣ Use database instead of text files
+Migrate from flat-file storage to a secure SQL database (PostgreSQL/SQLite) with proper encryption at rest, prepared statements, and transaction support.
+
+### 5️⃣ Implement a "forget password" feature
+Add secure password recovery mechanism using email verification, time-limited reset tokens (15-30 minutes expiration), and rate limiting to prevent abuse.
+
+---
+
+### Additional Enhancements
+- [ ] Add comprehensive unit tests with pytest
+- [ ] Implement multi-factor authentication (MFA/TOTP)
+- [ ] Add session management with JWT tokens
+- [ ] Implement proper logging framework (structured logs)
+- [ ] Add rate limiting on authentication attempts
+- [ ] Integrate with Key Management Systems (KMS)
 
 ---
 
