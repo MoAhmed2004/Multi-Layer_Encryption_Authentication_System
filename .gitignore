@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local Data & Keys (Do not upload these!)
+users_data.txt
+rsa_keys.pem
+
+# Environment variables
+.env
+
+# IDE settings (VS Code)
+.vscode/
+
+
+
