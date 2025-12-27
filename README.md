@@ -114,7 +114,7 @@ python main.py
 
 | Current Implementation | Production Recommendation |
 |------------------------|---------------------------|
-| ECB Mode (DES/AES) | GCM or CBC with IV |
+| ECB Mode (DES/AES) | CTR with IV |
 | Hardcoded Symmetric Keys | Environment Variables / KMS |
 | SHA-256 only | Argon2 / Bcrypt with unique Salt |
 | Flat File Storage | Encrypted SQL Database |
