@@ -1,4 +1,4 @@
-# 🔐 Multi-Layer Encryption Authentication System
+#  Multi-Layer Encryption Authentication System
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python)
 ![Security](https://img.shields.io/badge/Security-Educational-red)
@@ -8,7 +8,7 @@ A Python-based graphical authentication system designed to visualize and demonst
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This application serves as an educational tool for understanding how different cryptographic algorithms can be chained together. It features a live "Encryption Log" that shows the transformation of data in real-time during the registration and login processes.
 
@@ -21,7 +21,7 @@ This application serves as an educational tool for understanding how different c
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Registration Interface
 ![Registration Process](Screenshots/register_demo.png)
@@ -33,7 +33,7 @@ This application serves as an educational tool for understanding how different c
 
 ---
 
-## 🛠️ Features
+##  Features
 
 * **Interactive GUI:** Built with **Tkinter**, offering a clean dark-mode interface with toggleable password visibility.
 * **Real-time Logging:** A side panel that displays the hexadecimal output of each encryption step (SHA → DES → AES → RSA).
@@ -44,7 +44,7 @@ This application serves as an educational tool for understanding how different c
 
 ---
 
-## 📋 Requirements
+##  Requirements
 
 - **Python 3.7+**
 - **tkinter** (usually included with Python)
@@ -52,7 +52,7 @@ This application serves as an educational tool for understanding how different c
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 ├── main.py                # GUI implementation with Tkinter
@@ -71,7 +71,7 @@ This application serves as an educational tool for understanding how different c
 
 ---
 
-## ⚙️ Installation & Usage
+##  Installation & Usage
 
 ### 1. Clone the repository:
 ```bash
@@ -91,26 +91,26 @@ python main.py
 
 ---
 
-## 💡 Usage Example
+##  Usage Example
 
 ### Registration:
 1. Select **"Register"** mode
 2. Enter username: `mohamed`
 3. Enter password: `SecureP@ss123!`
-4. Click **"🔒 REGISTER USER"**
+4. Click **" REGISTER USER"**
 5. Watch the encryption process in the log panel
 
 ### Login:
 1. Switch to **"Login"** mode
 2. Enter your registered credentials
-3. Click **"🔓 LOGIN"**
+3. Click **" LOGIN"**
 4. Observe the decryption chain validation
 
 ---
 
-## 🛡️ Security Considerations
+##  Security Considerations
 
-**⚠️ Educational Purpose Only:** This project demonstrates cryptographic concepts and is not intended for production use.
+**Educational Purpose Only:** This project demonstrates cryptographic concepts and is not intended for production use.
 
 | Current Implementation | Production Recommendation |
 |------------------------|---------------------------|
@@ -129,23 +129,23 @@ python main.py
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 The following enhancements are planned to improve security and production readiness:
 
-### 1️⃣ Replace ECB with CTR mode
+### 1️ Replace ECB with CTR mode
 Migrate from Electronic Codebook (ECB) to Counter (CTR) mode to eliminate pattern preservation vulnerabilities and provide proper diffusion in encrypted data.
 
-### 2️⃣ Remove DES and rely on AES only
+### 2️ Remove DES and rely on AES only
 Eliminate the deprecated DES algorithm and use AES-256 exclusively, as DES is vulnerable to brute-force attacks and no longer meets modern security standards.
 
-### 3️⃣ Implement password salting
+### 3️ Implement password salting
 Add unique, randomly-generated salts for each password before hashing using PBKDF2 or Argon2 to prevent rainbow table attacks and enhance password security.
 
-### 4️⃣ Use database instead of text files
+### 4️ Use database instead of text files
 Migrate from flat-file storage to a secure SQL database (PostgreSQL/SQLite) with proper encryption at rest, prepared statements, and transaction support.
 
-### 5️⃣ Implement a "forget password" feature
+### 5️ Implement a "forget password" feature
 Add secure password recovery mechanism using email verification, time-limited reset tokens (15-30 minutes expiration), and rate limiting to prevent abuse.
 
 ---
@@ -154,36 +154,33 @@ Add secure password recovery mechanism using email verification, time-limited re
 - [ ] Add comprehensive unit tests with pytest
 - [ ] Implement multi-factor authentication (MFA/TOTP)
 - [ ] Add session management with JWT tokens
-- [ ] Implement proper logging framework (structured logs)
 - [ ] Add rate limiting on authentication attempts
-- [ ] Integrate with Key Management Systems (KMS)
-
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Feel free to:
-- 🐛 Report bugs
-- 💡 Suggest new features
-- 🔧 Submit pull requests
+-  Report bugs
+-  Suggest new features
+-  Submit pull requests
 
 ---
 
-## 👨‍💻 Authors
+##  Authors
 
 ### **Mohamed Ahmed**
-🔐 Cybersecurity Student  
+ Cybersecurity Student  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/mohamedahmed2004)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/MoAhmed2004)
 
 ### **Hana Emad**
-🔐 Cybersecurity Student  
+ Cybersecurity Student  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/hana-emad-ba7066314/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/hana200000)
 
 ---
 
-## 🙏 Acknowledgments 
+##  Acknowledgments 
 
 - **PyCryptodome** for cryptographic primitives
 - **Tkinter** for GUI framework
