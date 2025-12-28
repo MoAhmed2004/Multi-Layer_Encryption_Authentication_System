@@ -183,7 +183,7 @@ Contributions are welcome! Feel free to:
 
 ---
 
-## 🙏 Acknowledgments
+## 🙏 Acknowledgments 
 
 - **PyCryptodome** for cryptographic primitives
 - **Tkinter** for GUI framework
